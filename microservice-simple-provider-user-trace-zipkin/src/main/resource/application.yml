@@ -1,0 +1,25 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost/scdata
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: derbysoft
+  zipkin:
+    base-url: http://10.10.10.141:9411
+  sleuth:
+    sampler:
+      rate: 10
+logging:
+  level:
+    root: info
+    org.springframework.web.servlet.DispatcherServlet: debug

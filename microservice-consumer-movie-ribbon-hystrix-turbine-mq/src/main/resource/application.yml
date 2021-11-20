@@ -1,0 +1,14 @@
+server:
+  port: 8010
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtrator: TRACE
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon-hystrix
+  cloud:
+    zookeeper:
+      connect-string: 10.10.10.141:2181

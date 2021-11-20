@@ -1,0 +1,28 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user-my-metadata
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost/scdata
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: derbysoft
+  cloud:
+    zookeeper:
+      connect-string: 10.10.10.141:2181
+      discovery:
+        metadata: {a:12,b:24}
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtrator: TRACE

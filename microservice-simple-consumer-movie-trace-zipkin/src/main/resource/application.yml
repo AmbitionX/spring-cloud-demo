@@ -1,0 +1,13 @@
+server:
+  port: 8010
+logging:
+  level:
+    root: info
+spring:
+  application:
+    name: microservice-simple-consumer-movie-trace-zipkin
+  zipkin:
+    base-url: http://10.10.10.141:9411
+  sleuth:
+    sampler:
+      rate: 10

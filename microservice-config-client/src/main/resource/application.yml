@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: microservice-foo
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://localhost:8080
+  cloud:
+    config:
+#      name: study
+      fail-fast: true
+      profile: ${spring.profiles.active}
+      label: master

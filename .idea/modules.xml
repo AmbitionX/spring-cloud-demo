@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-config-client/microservice-config-client.iml" filepath="$PROJECT_DIR$/microservice-config-client/microservice-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" filepath="$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie/microservice-consumer-movie.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie/microservice-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-feign-hystric-fallback/microservice-consumer-movie-feign-hystric-fallback.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-feign-hystric-fallback/microservice-consumer-movie-feign-hystric-fallback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-customizing/microservice-consumer-movie-ribbon-customizing.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-customizing/microservice-consumer-movie-ribbon-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-hystrix/microservice-consumer-movie-ribbon-hystrix.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-hystrix/microservice-consumer-movie-ribbon-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-hystrix-turbine-mq/microservice-consumer-movie-ribbon-hystrix-turbine-mq.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-hystrix-turbine-mq/microservice-consumer-movie-ribbon-hystrix-turbine-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-understanding-metadata/microservice-consumer-movie-understanding-metadata.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-understanding-metadata/microservice-consumer-movie-understanding-metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discovery-eureka/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/microservice-discovery-eureka/microservice-discovery-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discovery-eureka-authentication/microservice-discovery-eureka-authentication.iml" filepath="$PROJECT_DIR$/microservice-discovery-eureka-authentication/microservice-discovery-eureka-authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" filepath="$PROJECT_DIR$/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discovery-zookeeper/microservice-discovery-zookeeper.iml" filepath="$PROJECT_DIR$/microservice-discovery-zookeeper/microservice-discovery-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-gateway-zuul/microservice-gateway-zuul.iml" filepath="$PROJECT_DIR$/microservice-gateway-zuul/microservice-gateway-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-gateway-zuul-aggregation/microservice-gateway-zuul-aggregation.iml" filepath="$PROJECT_DIR$/microservice-gateway-zuul-aggregation/microservice-gateway-zuul-aggregation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-hystrix-dashboard/microservice-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/microservice-hystrix-dashboard/microservice-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-hystrix-turbine/microservice-hystrix-turbine.iml" filepath="$PROJECT_DIR$/microservice-hystrix-turbine/microservice-hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-hystrix-turbine-mq/microservice-hystrix-turbine-mq.iml" filepath="$PROJECT_DIR$/microservice-hystrix-turbine-mq/microservice-hystrix-turbine-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-provider-user/microservice-provider-user.iml" filepath="$PROJECT_DIR$/microservice-provider-user/microservice-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-provider-user-my-metadata/microservice-provider-user-my-metadata.iml" filepath="$PROJECT_DIR$/microservice-provider-user-my-metadata/microservice-provider-user-my-metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-movie-trace-zipkin/microservice-simple-consumer-movie-trace-zipkin.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-movie-trace-zipkin/microservice-simple-consumer-movie-trace-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user/microservice-simple-provider-user.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user/microservice-simple-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user-trace/microservice-simple-provider-user-trace.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user-trace/microservice-simple-provider-user-trace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user-trace-elk/microservice-simple-provider-user-trace-elk.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user-trace-elk/microservice-simple-provider-user-trace-elk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user-trace-zipkin/microservice-simple-provider-user-trace-zipkin.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user-trace-zipkin/microservice-simple-provider-user-trace-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
+    </modules>
+  </component>
+</project>

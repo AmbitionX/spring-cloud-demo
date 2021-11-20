@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.study.demo</groupId>
+    <artifactId>springcloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modules>
+        <module>microservice-simple-provider-user</module>
+        <module>microservice-simple-consumer-movie</module>
+        <module>microservice-discovery-eureka</module>
+        <module>microservice-discovery-zookeeper</module>
+        <module>microservice-provider-user</module>
+        <module>microservice-provider-user-my-metadata</module>
+        <module>microservice-consumer-movie</module>
+        <module>microservice-consumer-movie-feign</module>
+        <module>microservice-consumer-movie-feign-hystric-fallback</module>
+        <module>microservice-consumer-movie-feign-customizing</module>
+        <module>microservice-consumer-movie-understanding-metadata</module>
+        <module>microservice-consumer-movie-ribbon</module>
+        <module>microservice-consumer-movie-ribbon-hystrix</module>
+        <module>microservice-consumer-movie-ribbon-hystrix-turbine-mq</module>
+        <module>microservice-consumer-movie-ribbon-customizing</module>
+        <module>microservice-discovery-eureka-ha</module>
+        <module>microservice-discovery-eureka-authentication</module>
+        <module>microservice-hystrix-turbine</module>
+        <module>microservice-hystrix-dashboard</module>
+        <module>microservice-hystrix-turbine-mq</module>
+        <module>microservice-gateway-zuul</module>
+        <module>microservice-gateway-zuul-aggregation</module>
+        <module>microservice-config-server</module>
+        <module>microservice-config-client</module>
+        <module>microservice-simple-provider-user-trace</module>
+        <module>microservice-simple-provider-user-trace-elk</module>
+        <module>microservice-simple-provider-user-trace-zipkin</module>
+        <module>microservice-simple-consumer-movie-trace-zipkin</module>
+    </modules>
+
+    <name>springcloud</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <spring.cloud-version>2020.0.3</spring.cloud-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-bom</artifactId>
+                <version>2021.0.4</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-entitymanager</artifactId>-->
+            <!--<version>5.3.7.Final</version>-->
+            <!--</dependency>-->
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

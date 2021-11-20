@@ -1,0 +1,33 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost/scdata
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: derbysoft
+#  cloud:
+#    zookeeper:
+#      connect-string: 10.10.10.141:2181
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #表示将自己的ip注册到eureka server，
+    #如不配置该属性或者为false，表示注册微服务所在操作系统的hostname到eureka server
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtrator: TRACE

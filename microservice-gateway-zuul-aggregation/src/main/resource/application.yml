@@ -1,0 +1,29 @@
+server:
+  port: 8041
+spring:
+  application:
+    name: microservice-gateway-zuul
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#      routes:
+#      - id: microservice-consumer-movie
+#        uri: lb://microservice-consumer-movie
+#        predicates:
+#          - Path=/microservice-consumer-movie/**
+#      - id: microservice-provider-user
+#        uri: lb://microservice-provider-user
+#        predicates:
+#          - Path=/microservice-provider-user/**
+#      - id: zuul-test
+#        uri: https://blog.csdn.net
+#        predicates:
+#          - Path=/csdn
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

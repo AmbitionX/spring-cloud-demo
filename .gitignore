@@ -1,0 +1,22 @@
+*.class
+target/
+
+# Package files #
+*.jar
+*.war
+*.ear
+
+# Eclipse project files
+.settings/
+.classpath
+.project
+
+# Intellij project files
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# Others
+.DS_Store
+/gateway/src/main/profiles/dev/data.properties

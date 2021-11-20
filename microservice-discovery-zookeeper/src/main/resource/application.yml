@@ -1,0 +1,14 @@
+server:
+  port: 8761
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtrator: TRACE
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 10.10.10.141:2181
+  application:
+    name: microservice-discovery-zookeeper

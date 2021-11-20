@@ -1,0 +1,16 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: microservice-hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #表示将自己的ip注册到eureka server，
+    #如不配置该属性或者为false，表示注册微服务所在操作系统的hostname到eureka server
+turbine:
+  app-config: MICROSERVICE-CONSUMER-MOVIE-FEIGN-HYSTRIC-FALLBACK,MICROSERVICE-CONSUMER-MOVIE-RIBBON-HYSTRIX
+  cluster-name-expression: "'default'"
+  combine-host-port: true
