@@ -9,6 +9,10 @@ logging:
 spring:
   application:
     name: microservice-consumer-movie-ribbon-hystrix
-  cloud:
-    zookeeper:
-      connect-string: 10.10.10.141:2181
+#  cloud:
+#    zookeeper:
+#      connect-string: 10.10.10.141:2181
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/

@@ -36,6 +36,46 @@
             <!--<version>2.2.0.RC2</version>-->
         <!--</dependency>-->
     </dependencies>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!--docker docker-maven-plugin 插件-->
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <!--<serverId>my-hub</serverId>-->
+                        <!--<registryUrl>http://${docker.repostory}</registryUrl>-->
+                        <!--必须配置dockerHost标签（除非配置系统环境变量DOCKER_HOST）-->
+                        <dockerHost>http://10.10.10.141:2375</dockerHost>
+                        <forceTags>true</forceTags>
+                        <!--Building image 192.168.10.11/demo1-->
+                        <!--<imageName>${docker.repostory}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>-->
+                        <imageName>xcoderzpy/${project.artifactId}:${project.version}</imageName>
+                        <!-- 如果不使用Dockerfile则需要指定这个 -->
+                        <baseImage>java</baseImage>
+                        <!-- 指定 Dockerfile 路径-->
+                        <!--<dockerDirectory>${basedir}/</dockerDirectory>-->
+
+                        <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
+
+                        <!-- jar包位置-->
+                        <resources>
+                            <resource>
+                                <!--<targetPath>/ROOT</targetPath>-->
+                                <targetPath>/</targetPath>
+                                <!-- target目录下-->
+                                <directory>${project.build.directory}</directory>
+                                <!--通过jar包名找到jar包-->
+                                <include>${project.build.finalName}.jar</include>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 
 </project>

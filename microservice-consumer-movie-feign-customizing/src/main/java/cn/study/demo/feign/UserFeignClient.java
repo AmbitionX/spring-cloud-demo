@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient(name = "microservice-provider-user", configuration = FeignConfiguration.class)
 public interface UserFeignClient {
-
     @RequestLine("GET /{id}")
     public User findById(@Param("id") Long id);
-
 }

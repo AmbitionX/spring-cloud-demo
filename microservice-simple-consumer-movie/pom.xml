@@ -11,7 +11,7 @@
 
     <artifactId>microservice-simple-consumer-movie</artifactId>
 
-    <name>microservice-simple-provider-user</name>
+    <name>microservice-simple-consumer-movie</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

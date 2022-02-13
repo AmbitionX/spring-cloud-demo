@@ -3,4 +3,8 @@ server:
 spring:
   application:
     name: microservice-hystrix-dashboard
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
 
